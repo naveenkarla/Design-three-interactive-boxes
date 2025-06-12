@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bundle-container">
+    	<div class="bundle-title-wrapper">
+  			<h2 class="bundle-title">Bundle & Save</h2>
+		</div>
+        <div class="bundle-options">
+            <!-- Option 1 -->
+            <div class="bundle-option-wrapper">
+                <input type="radio" id="bundle1" name="bundle" value="195.00" data-pairs="1" checked>
+                <label for="bundle1" class="bundle-option">
+                    <div class="option-main">
+                        <div class="option-details">
+                            <span class="option-title">1 Pair</span>
+                            <span class="option-price">DKK 195.00</span>
+                        </div>
+                        <div class="option-discount">50% OFF</div>
+                    </div>
+                    <div class="item-selectors">
+                    </div>
+                </label>
+            </div>
+
+            <!-- Option 2 -->
+            <div class="bundle-option-wrapper">
+                <!-- <div class="badge-popular">Most Popular</div> -->
+                <input type="radio" id="bundle2" name="bundle" value="345.00" data-pairs="2">
+                <label for="bundle2" class="bundle-option">
+                    <div class="option-main">
+                        <div class="option-details">
+                            <span class="option-title">2 Pair</span>
+                            <span class="option-price">DKK 345.00</span>
+                        </div>
+                        <div class="option-flex">
+							<div class="option-discount mostpapular">
+								Most Popular
+							</div>
+							<div class="option-discount textend">40% OFF</div>
+                        </div>
+                    </div>
+                    <div class="item-selectors">
+                    </div>
+                </label>
+            </div>
+
+            <!-- Option 3 -->
+            <div class="bundle-option-wrapper">
+                <input type="radio" id="bundle3" name="bundle" value="528.00" data-pairs="3">
+                <label for="bundle3" class="bundle-option">
+                    <div class="option-main">
+                        <div class="option-details">
+                            <span class="option-title">3 Pair</span>
+                            <span class="option-price">DKK 528.00</span>
+                        </div>
+                        <div class="option-discount">60% OFF</div>
+                    </div>
+                    <div class="item-selectors">
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="summary">
+            <span class="shipping-info">Free 2 Day Shipping</span>
+            <span class="total-price">Total : DKK <span id="total-amount">195.00</span></span>
+        </div>
+
+        <button class="add-to-cart-btn">+ Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
